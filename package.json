@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/easabbir/scraping-session-1/issues"
   },
-  "homepage": "https://github.com/easabbir/scraping-session-1#readme"
+  "homepage": "https://github.com/easabbir/scraping-session-1#readme",
+  "dependencies": {
+    "execa": "^9.4.1"
+  }
 }
