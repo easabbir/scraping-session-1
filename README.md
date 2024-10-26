@@ -41,3 +41,8 @@ import execa: import { $ } from 'execa'
 - Write a script that reads one of the `.html` files downloaded above using `JSDOM` and prints the price in the format `console.log({ price });`.
 
 install jsdom: npm install jsdom
+and import : import {JSDOM} from 'jsdom'
+
+read the file with fs read
+convert to dom
+dom.window.document.queryselector will be able to provide the price
