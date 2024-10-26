@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/easabbir/scraping-session-1#readme",
   "dependencies": {
-    "execa": "^9.4.1"
+    "execa": "^9.4.1",
+    "jsdom": "^25.0.1"
   }
 }
