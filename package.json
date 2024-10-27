@@ -17,8 +17,10 @@
     "url": "https://github.com/easabbir/scraping-session-1/issues"
   },
   "homepage": "https://github.com/easabbir/scraping-session-1#readme",
+  "type": "module",
   "dependencies": {
     "execa": "^9.4.1",
-    "jsdom": "^25.0.1"
+    "jsdom": "^25.0.1",
+    "puppeteer": "^23.6.0"
   }
 }

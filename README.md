@@ -46,3 +46,35 @@ and import : import {JSDOM} from 'jsdom'
 read the file with fs read
 convert to dom
 dom.window.document.queryselector will be able to provide the price
+
+### **5. Parse the file with `Puppeteer`**
+
+- **Script**: `parse-with-puppeteer.mjs`
+- Write a script that uses `Puppeteer` to read one of the `.html` files downloaded above and prints the price in the format `console.log({ price });`.
+
+
+npm install puppeteer
+import puppeteer from 'puppeteer';
+import fs from 'node:fs/promises';
+
+const browser = await puppeteer.launch();
+const page = await browser.newPage();
+
+await page.setContent(htmlString,{waitUntil:'domcontentloaded'})
+
+// Format and log the price
+console.log(JSON.stringify({ price }, null, 2));
+
+await browser.close();
+
+---
+
+### **6. Puppeteer script to extract the price from another page**
+
+- **Script**: `extract-marktwo-price.mjs`
+- Write a script that navigates to the "[marktwo](https://www.studioneat.com/products/marktwo)" page and logs the price in the format `console.log({ price });`.
+- https://www.studioneat.com/products/marktwo
+
+
+
+
